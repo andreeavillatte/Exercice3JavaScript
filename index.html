@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>JavaScript Exercice 3</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Exercice 3</h2>
+        <p>Afficher une boîte de dialogue permettant de saisir son prénom. Afficher dans une boîte de dialogue "Bonjour,
+            " suivi du prénom saisi.</p>
+
+        <div class="form-group">
+            <label>Votre nom:</label>
+            <input type="text" id="myText" class="form-control" placeholder="Entrer votre nom" aria-label="">
+            <div class="valid-feedback">Valid.</div>
+            <div class="input-group-append">
+                <button class="btn btn-success" onclick="myFunction()" type="button">Click the button please</button>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            alert("Bonjour " + x);
+        }
+    </script>
+
+</html>
